@@ -1461,7 +1461,7 @@ datalines;
 group WHtR<0.5   darkorange  Bold   
 group WHtR≥0.5   black      
 run;
-ods listing gpath="D:\1a\learning\research\数据20210824\大肠癌筛查\results\survival curve" dpi=300;
+ods listing gpath="D:\sas_git" dpi=300;
 ods graphics/border=off imagename="CVD  mortality,by WHtR" imagefmt=tiff;
 proc sgplot data=estimatesm  dattrmap=line ;
 step x=survt_year y=survival/group=subtype attrid=group lineattrs=(thickness=2);
